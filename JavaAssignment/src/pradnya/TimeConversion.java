@@ -2,19 +2,19 @@ package pradnya;
 
 public class TimeConversion {
 
-	static void time(int a)
+	static void time(int Seconds)
 	{
-		 int b = a%60;
-		int c=a/60;
-		int d=c/60;
-		c=c%60;
 		
-		System.out.println("Time is :"+d + ":" + c + ":" + b);
+		int Hours = Seconds/3600;
+		int Minutes = Seconds%3600/60;
+		Seconds = (Seconds%3600)%60;
+		
+		System.out.println("Time is :"+ Hours + ":" + Minutes + ":" + Seconds);
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int a = Integer.parseInt(args[0]);
-		 time(a);
+		int Seconds = Integer.parseInt(args[0]);
+		 time(Seconds);
 	}
 
 }
