@@ -4,10 +4,10 @@ public class Assignment1_Q7 {
 	void TimeConversion(int Seconds) { // method to convert seconds into
 										// hour:minute:second
 
-		int r = Seconds % 3600;
 		int hours = Seconds / 3600;
-		int minutes = r / 60;
-		int seconds = r / 60;
+		int p = Seconds % 3600;
+		int minutes = p / 60;
+		int seconds = p % 60;
 
 		System.out.println("Time is : " + hours + ":" + minutes + ":" + seconds);
 
