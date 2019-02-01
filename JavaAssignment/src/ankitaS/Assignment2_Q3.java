@@ -15,7 +15,7 @@ public class Assignment2_Q3 {
 
 			if (array[array_index] == number) {
 				System.out.println("This number is present");
-				flag = true;
+				flag =true;
 			}
 		}
 		if (flag == false) {
