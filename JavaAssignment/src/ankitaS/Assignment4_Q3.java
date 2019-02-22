@@ -1,5 +1,6 @@
 package ankitaS;
 
+//Program to get count of a particular character in a string
 import java.util.Scanner;
 
 public class Assignment4_Q3 {
